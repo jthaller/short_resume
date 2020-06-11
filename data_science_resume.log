@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.23)  7 JUN 2020 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.23)  11 JUN 2020 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -279,7 +279,7 @@ s/type1/public/amsfonts/cm/cmbx6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb>
-Output written on data_science_resume.pdf (1 page, 83792 bytes).
+Output written on data_science_resume.pdf (1 page, 83458 bytes).
 PDF statistics:
  32 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream

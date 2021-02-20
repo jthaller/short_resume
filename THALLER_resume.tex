@@ -26,8 +26,8 @@
 	linktoc=all,     %set to all if you want both sections and subsections linked
 	allcolors = black %get rid of weird auto link highlighting
 }
-
-\usepackage[left=0.5in,top=0.5in,right=0.4in,bottom=0.4in]{geometry} % Document margins
+\usepackage{gensymb} %need for \degree
+\usepackage[left=0.5in,top=0.4in,right=0.4in,bottom=0.4in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Jeremy K. Thaller} % Your name
@@ -54,7 +54,7 @@
 %	\item[] \vspace{-.75em}
 %	\end{rSubsection}	
 	\vspace{-1em}
-	\textbf{ About: }\textit{US citizen; Aug.~2021 MSci.~graduate with ML experience; looking for entry level data science roles}
+	\hfill \textbf{ ~~~~~About: }\textit{US citizen; Aug.~2021 MSci.~graduate with significant python and ML experience} \hfill
 	\vspace{-1em}
 	
 	%----------------------------------------------------------------------------------------
@@ -71,7 +71,7 @@
 		\begin{rSubsection}{Ludwig Maximilians \& Technische Universit{\"a}t M{\"u}nchen}{2019 -- Aug. 2021}{}{}
 		\vspace{-.2em}
 %		MSci. in Geomaterials and Geochemistry
-		\item[] {(Anticipated) MSci. in Materials Science and Engineering}\hfill{\em Munich, Germany}
+		\item[] {(Anticipated) MSci. in Geomaterials and Geochemistry}\hfill{\em Munich, Germany}
 		\end{rSubsection}
 	\vspace{-.4em}
 		\begin{rSubsection}{Williams College}{\em 2015 -- 2019}{}{}
@@ -81,7 +81,7 @@
 		\end{rSubsection}
 	\end{rSection}
 		
-\vspace{-1em}		
+\vspace{-1.75em}		
 	%----------------------------------------------------------------------------------------
 	%   WORK EXPERIENCE
 	%----------------------------------------------------------------------------------------
@@ -107,7 +107,7 @@
 		\begin{rSubsection}{Williams College}{Summer 2017}{Undergraduate Research Assistant, Department of Physics}{}
 %			\vspace{-.5em}
 %			\item[] {\em Advised by Protik K. Majumder, Professor of Physics}\hfill {\em Williams College}
-			\item[] Programmed and installed a PID controller to regulate furnace temperatures within 1 degree C, designed a deposition-rate detector for an indium cell chamber, and analyzed data with MATLAB and Mathematica
+			\item[] Programmed and installed a PID controller to regulate furnace temperatures within 1 \degree C, designed a deposition-rate detector for an indium cell chamber, and analyzed hyperfine splitting data with MATLAB and Mathematica
 		\end{rSubsection}
 
 %		\begin{rSubsection}{Student Technology Assistant}{Summer 2016}{Office of Information Technology}{Williams College}
@@ -118,7 +118,7 @@
 %		\end{rSubsection}
 	\end{rSection}
 		
-	\vspace{-1em}
+	\vspace{-1.75em}
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
@@ -128,7 +128,7 @@
 \begin{rSection}{Technical Strengths}
 	
 	\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-		Programming Languages &  Python, MATLAB, SQL, Java, Arduino (C/\CC)\\
+		Programming Languages &  Python, MATLAB, SQL, Java, Arduino (\CC~Variant)\\
 		Python Packages & Pandas, NumPy, Scikit-Learn, PyTorch, TensorFlow, KERAS, \\
 		 & Tensorboard,  Seaborn, Matplotlib, Regex, Optuna \\
 		Data Software & Mathematica, Quantum Espresso, Excel, LabView, LoggerPro \\
@@ -137,11 +137,11 @@
 	
 \end{rSection}
 
-\vspace{-1em}
+\vspace{-1.5em}
 %------------------------------------------------------------------------------------
 %       Projects
 %------------------------------------------------------------------------------------
-\begin{rSection}{Data Science Projects} \itemsep -2pt
+\begin{rSection}{Recent Projects} \itemsep -2pt
 		\textbf{Facebook Messenger Analysis} \\
 		HTML and JSON scraping, 
 		statistics analysis and visualization,
@@ -152,26 +152,21 @@
 		Neural network to reduce semiconductor candidate screening time by $ 100\times $
 \end{rSection}
 
-\vspace{-1em}
+\vspace{-1.5em}
 
 %------------------------------------------------------------------------------------
-%       Data Science Skills
+%       Advanced Physics Coursework
 %------------------------------------------------------------------------------------
-\begin{rSection}{Data Science Skills} \itemsep -2pt
+	\begin{rSection}{Relevant Coursework} \itemsep -2pt
 	\begin{tabular}{ @{} >{}l @{\hspace{6ex}} l }
-		Data Cleaning and Feature Engineering, 
-		SSH + VIM,
-		Unix Command Line (BASH), 
-		Git and Version Control, \\
-		Probability and Statistics (Bayesian),
-		Neural Networks and Deep Learning,
-		Natural Language Processing, \\ 
-		Image Classification and Computer Vision, 
-		Recommendation Systems
+		Computational Materials Design &  Thermodynamics and Statistical Mechanics  \\
+		Molecular Dynamic Simulations & Neutron Diffraction and Structural Determination \\
+		Advanced Classical Mechanics and Fluid Dynamics  & Particle Physics (Oxbridge Style Tutorial)\\
 	\end{tabular}
 \end{rSection}
 
-
+%	Computational Materials Design \hfill $\diamond$ \hfill Molecular Dynamic Simulations \hfill $\diamond$  \hfill Solid State Physics \hfill $\diamond$  \hfill Gravity $\diamond$\\
+%\hfill Advanced Classical Mechanics \& Fluid Mechanics \hfill $\diamond$ \hfill Particle Physics \hfill $\diamond$ \hfill Statistical Mechanics \hfill $ \diamond $ \hfill Neutron Diffraction  $\diamond$ Linear Algebra \hfill $\diamond$ \hfill Multivariate and Vector Calculus \hfill $ \diamond $ \hfill Neutron Diffraction \hfill $ \diamond $
 %------------------------------------------------------------------------------------
 %       DOCUMENT END
 %------------------------------------------------------------------------------------	

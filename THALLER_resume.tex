@@ -26,14 +26,13 @@
 	linktoc=all,     %set to all if you want both sections and subsections linked
 	allcolors = black %get rid of weird auto link highlighting
 }
-
-\usepackage[left=0.5in,top=0.5in,right=0.4in,bottom=0.4in]{geometry} % Document margins
+\usepackage{gensymb} %need for \degree
+\usepackage[left=0.5in,top=0.4in,right=0.4in,bottom=0.4in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Jeremy K. Thaller} % Your name
 \address{\href{mailto:thallerjeremy@gmail.com}{thallerjeremy@gmail.com} \\ \href{https://jthaller.github.io/portfolio}{jthaller.github.io/portfolio} \\ \href{https://github.com/jthaller}{github.com/jthaller}} % Your address
-%\address{} % Your phone number and email
-%\definecolor{darkpurple}{RGB}{108,48,130}/
+
 
 \renewenvironment{rSection}[1]{
 	\sectionskip
@@ -54,26 +53,25 @@
 %	\item[] \vspace{-.75em}
 %	\end{rSubsection}	
 	\vspace{-1em}
-	\textbf{ About: }\textit{US citizen; Aug.~2021 MSci.~graduate with ML experience; looking for entry level data science roles}
+	\hfill \textbf{ ~~~~~About: }\textit{US citizen; Aug.~2021 MSci.~graduate with significant python and ML experience} \hfill
 	\vspace{-1em}
 	
 	%----------------------------------------------------------------------------------------
 	%	EDUCATION SECTION
 	%----------------------------------------------------------------------------------------
 	\begin{rSection}{Education} 
-
+		\begin{rSubsection}{Ludwig Maximilians \& Technische Universit{\"a}t M{\"u}nchen}{2019 -- Aug. 2021}{}{}
+			\vspace{-.2em}
+	%		MSci. in Geomaterials and Geochemistry
+			\item[] {(Anticipated) Joint MSci. in Materials Science and Engineering}\hfill{\em Munich, Germany}
+			\end{rSubsection}
+		\vspace{-.4em}
 		\begin{rSubsection}{Adam Mickiwicz University}{2019 -- Aug. 2021}{}{}
 			\vspace{-.2em}
 %			MSci. in Physics of Advanced Materials for Energy Processing
 			\item[] {(Anticipated) MSci. in Applied Physics}\hfill{\em Poznan, Poland}
 		\end{rSubsection}
 	\vspace{-.5em}
-		\begin{rSubsection}{Ludwig Maximilians \& Technische Universit{\"a}t M{\"u}nchen}{2019 -- Aug. 2021}{}{}
-		\vspace{-.2em}
-%		MSci. in Geomaterials and Geochemistry
-		\item[] {(Anticipated) MSci. in Materials Science and Engineering}\hfill{\em Munich, Germany}
-		\end{rSubsection}
-	\vspace{-.4em}
 		\begin{rSubsection}{Williams College}{\em 2015 -- 2019}{}{}
 			\vspace{-.2em}
 			\item[] {B.A. in Physics with Honors $\vert$ GPA 3.3}\hfill{\em Williamstown, MA}
@@ -81,33 +79,33 @@
 		\end{rSubsection}
 	\end{rSection}
 		
-\vspace{-1em}		
+\vspace{-1.75em}		
 	%----------------------------------------------------------------------------------------
 	%   WORK EXPERIENCE
 	%----------------------------------------------------------------------------------------
 	\begin{rSection}{Work Experience}
 			\begin{rSubsection}{Brookhaven National Lab}{Feb. -- Aug. 2021}{Master's Thesis Researcher, Structure and Dynamics of Applied Nanomaterials Group}{}
-			\item[] (Current) Applying supervised machine learning to synchrotron data to determine underlying structures
+			\item[] Applying supervised machine learning to particle accelerator data to determine nanoparticle disorder from x-ray absorption near edge (XANES) spectroscopy spectra
 			\vspace{-.2em}
 		\end{rSubsection}
 		\vspace{-.2em}
 		\begin{rSubsection}{Yale University}{Summer 2019}{Postbac Researcher, Department of Mechanical Engineering and Materials Science}{}
 %			\vspace{-.5em}
 %			\item[] {\em Advised by Jan Schroers, Professor of Physics}\hfill {\em Yale University}
-			\item[] Nanomolded crystalline metals and analyzed the samples with electron microscopy, wrote and deployed a python program to quicken repetitive calculations 
+			\item[] Nanomolded crystalline metals and analyzed the samples with electron microscopy; wrote and deployed a python program to quicken repetitive calculations 
 			\vspace{-.2em}
 		\end{rSubsection}
 		\vspace{-.2em}
 		\begin{rSubsection}{Williams College}{2018 -- 2019}{Undergraduate Thesis Researcher, Department of Physics}{}
 %			\vspace{-.5em}
 %			\item[] {\em Advised by Katharine E. Jensen, Professor of Physics}\hfill {\em Williams College}
-			\item[] Designed with SolidWorks and CNC milled a stretching apparatus for soft materials; collected data via confocal microscopy, processed and analyzed data with MATLAB and multinomial linear regressions to measure the strain dependency of solid surface stress
+			\item[] Designed and CNC milled a stretching apparatus for soft materials; collected data via confocal microscopy, processed and analyzed data with MATLAB and multinomial linear regressions to measure the strain dependency of solid surface stress in silicone gel.
 		\end{rSubsection}
 		\vspace{-.2em}
 		\begin{rSubsection}{Williams College}{Summer 2017}{Undergraduate Research Assistant, Department of Physics}{}
 %			\vspace{-.5em}
 %			\item[] {\em Advised by Protik K. Majumder, Professor of Physics}\hfill {\em Williams College}
-			\item[] Programmed and installed a PID controller to regulate furnace temperatures within 1 degree C, designed a deposition-rate detector for an indium cell chamber, and analyzed data with MATLAB and Mathematica
+			\item[] Programmed and installed a PID controller to regulate furnace temperatures within 1~\degree C, designed a deposition-rate detector, and analyzed absorption spectrum data with MATLAB and Mathematica
 		\end{rSubsection}
 
 %		\begin{rSubsection}{Student Technology Assistant}{Summer 2016}{Office of Information Technology}{Williams College}
@@ -118,7 +116,7 @@
 %		\end{rSubsection}
 	\end{rSection}
 		
-	\vspace{-1em}
+	\vspace{-1.75em}
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
@@ -128,20 +126,20 @@
 \begin{rSection}{Technical Strengths}
 	
 	\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-		Programming Languages &  Python, MATLAB, SQL, Java, Arduino (C/\CC)\\
-		Python Packages & Pandas, NumPy, Scikit-Learn, PyTorch, TensorFlow, KERAS, \\
-		 & Tensorboard,  Seaborn, Matplotlib, Regex, Optuna, Plotly/Dash \\
+		Programming Languages &  Python, MATLAB, SQL, Java, Arduino (\CC~Variant)\\
+		Python Packages & Pandas, NumPy, Scikit-Learn, PyTorch, TensorFlow, KERAS, Optuna  \\
+		 & Tensorboard,  Seaborn, Matplotlib, Plotly/Dash \\
 		Data Software & Mathematica, Quantum Espresso, Excel, LabView, LoggerPro \\
 		Visualization Software & LaTeX, Solid Works, VESTA, Adobe Illustrator, Adobe Photoshop
 	\end{tabular}
 	
 \end{rSection}
 
-\vspace{-1em}
+\vspace{-1.5em}
 %------------------------------------------------------------------------------------
-%       Projects
+%       Recent Projects
 %------------------------------------------------------------------------------------
-\begin{rSection}{Data Science Projects} \itemsep -2pt
+\begin{rSection}{Recent Projects} \itemsep -2pt
 		\textbf{Facebook Messenger Analysis} \\
 		HTML and JSON scraping, 
 		statistics analysis and visualization,
@@ -152,7 +150,7 @@
 		Neural network to reduce semiconductor candidate screening time by $ 100\times $
 \end{rSection}
 
-\vspace{-1em}
+\vspace{-1.5em}
 
 %------------------------------------------------------------------------------------
 %       Data Science Skills
@@ -172,6 +170,19 @@
 \end{rSection}
 
 
+% %------------------------------------------------------------------------------------
+% %       Advanced Physics Coursework
+% %------------------------------------------------------------------------------------
+% 	\begin{rSection}{Relevant Coursework} \itemsep -2pt
+% 	\begin{tabular}{ @{} >{}l @{\hspace{6ex}} l }
+% 		Computational Materials Design &  Thermodynamics and Statistical Mechanics  \\
+% 		Molecular Dynamic Simulations & Neutron Diffraction and Structural Determination \\
+% 		Advanced Classical Mechanics and Fluid Dynamics  & Particle Physics (Oxbridge Style Tutorial)\\
+% 	\end{tabular}
+% \end{rSection}
+
+%	Computational Materials Design \hfill $\diamond$ \hfill Molecular Dynamic Simulations \hfill $\diamond$  \hfill Solid State Physics \hfill $\diamond$  \hfill Gravity $\diamond$\\
+%\hfill Advanced Classical Mechanics \& Fluid Mechanics \hfill $\diamond$ \hfill Particle Physics \hfill $\diamond$ \hfill Statistical Mechanics \hfill $ \diamond $ \hfill Neutron Diffraction  $\diamond$ Linear Algebra \hfill $\diamond$ \hfill Multivariate and Vector Calculus \hfill $ \diamond $ \hfill Neutron Diffraction \hfill $ \diamond $
 %------------------------------------------------------------------------------------
 %       DOCUMENT END
 %------------------------------------------------------------------------------------	
